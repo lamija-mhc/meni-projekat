@@ -10,11 +10,28 @@ const menuData = {
       name: "Pohovani hljeb",
       description: "Hljeb, jaja, sir",
       price: "5 KM",
+      image: "nesto"
+    }
+  ],
+
+  salate: [
+    {
+      name: "Omlet sa sirom",
+      description: "Jaja, sir, začini",
+      price: "6 KM",
+      image: "/static/images/1.jpg"
+    },
+    {
+      name: "Pohovani hljeb",
+      description: "Hljeb, jaja, sir",
+      price: "5 KM",
       image: "https://source.unsplash.com/400x300/?toast"
     }
+
   ],
   // Dodaj i ostale kategorije kao u prethodnom kodu
   // ...
+  //neki komentar 
 };
 
 // Funkcija za prikaz jela iz određene kategorije
