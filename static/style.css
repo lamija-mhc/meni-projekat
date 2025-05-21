@@ -1,31 +1,113 @@
+/* Osnovni reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: pink;
-    color: #333;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1, h2 {
-    text-align: center;
+/* Zaglavlje */
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.meni-kategorija {
-    margin-bottom: 30px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.stavka {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dashed #aaa;
-    padding: 8px 0;
+header p {
+  font-size: 1.2rem;
 }
 
-.naziv {
-    font-weight: bold;
+/* Navigacija kategorija */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ecf0f1;
+  padding: 1rem;
 }
 
-.cijena {
-    color: #888;
+.category-nav button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-nav button:hover {
+  background-color: #2980b9;
+}
+
+/* Sekcija menija */
+#menu-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Kartice jela */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  color: #7f8c8d;
+}
+
+.price {
+  display: block;
+  margin: 0 1rem 1rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Podnožje */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
