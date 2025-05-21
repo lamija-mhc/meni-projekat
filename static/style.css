@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.meni-kategorija {
+    margin-bottom: 30px;
+}
+
+.stavka {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #aaa;
+    padding: 8px 0;
+}
+
+.naziv {
+    font-weight: bold;
+}
+
+.cijena {
+    color: #888;
+}
