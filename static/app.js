@@ -10,7 +10,7 @@ const menuData = {
       name: "Pohovani hljeb",
       description: "Hljeb, jaja, sir",
       price: "5 KM",
-      image: "https://source.unsplash.com/400x300/?toast"
+      image: "nesto"
     }
   ],
 
@@ -27,6 +27,7 @@ const menuData = {
       price: "5 KM",
       image: "https://source.unsplash.com/400x300/?toast"
     }
+
   ],
   // Dodaj i ostale kategorije kao u prethodnom kodu
   // ...
