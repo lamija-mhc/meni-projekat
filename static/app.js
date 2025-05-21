@@ -31,6 +31,7 @@ const menuData = {
   ],
   // Dodaj i ostale kategorije kao u prethodnom kodu
   // ...
+  //neki komentar 
 };
 
 // Funkcija za prikaz jela iz određene kategorije
