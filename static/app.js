@@ -4,7 +4,7 @@ const menuData = {
       name: "Omlet sa sirom",
       description: "Jaja, sir, začini",
       price: "6 KM",
-      image: "/static/images/1.jpg"
+      image: "/static/images/pura.avif"
     },
     {
       name: "Pohovani hljeb",
