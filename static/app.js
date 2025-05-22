@@ -288,7 +288,7 @@ const menuData = {
     },
 
   ],
-  wokRizoto: [
+  wok: [
     {
       name: "Piletina Wok",
       description: "Piletina u kombinaciji sa svježim povrćem",
@@ -328,7 +328,7 @@ const menuData = {
       image: "/static/images/50.avif"
     },
   ],
-  hladnePlate: [
+  hladneplate: [
     {
       name: "Mesna plata",
       description: "Bogato jelo s raznim vrstama mesa, prilozima i umacima",
@@ -348,7 +348,7 @@ const menuData = {
       image: "/static/images/14.avif"
     },
   ],
-  burgerMeni: [
+  burgermenu: [
     {
       name: "Author Sandwich Meni",
       description: "Sendvič s krompirićima i Coca-Cola pićem",
@@ -380,7 +380,7 @@ const menuData = {
       image: "/static/images/58.avif"
     },
   ],
-  palacinci: [
+  palacinke: [
     {
       name: "Snickers",
       description: "Hrskavi komadići Snickers čokolade",
@@ -493,7 +493,7 @@ const menuData = {
       price: "5,00 KM",
       image: "/static/images/76.avif"
     },
-  ];
+  ],
 
 
   // Dodaj i ostale kategorije kao u prethodnom kodu
