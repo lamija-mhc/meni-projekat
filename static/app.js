@@ -94,7 +94,7 @@ const menuData = {
       name: "Sezonska salata ",
       description: "Svježe povrće iz sezone",
       price: "4 KM",
-      image: "/static/images/15.avifs"
+      image: "/static/images/15.avif"
     },
     {
       name: "Pileća obrok salata",
