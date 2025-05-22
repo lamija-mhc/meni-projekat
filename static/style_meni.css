@@ -91,3 +91,7 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+nav.category-nav button.active {
+  background-color: #ffa726;
+  box-shadow: 0 0 8px #ffa726;
+}

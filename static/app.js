@@ -534,3 +534,27 @@ function prikaziKategoriju(kategorija) {
 window.addEventListener("DOMContentLoaded", () => {
   prikaziKategoriju("dorucak");
 });
+
+// Dodaj ovo na kraj fajla app.js, ispod funkcije prikaziKategoriju
+
+// Selektuj sva dugmad u navigaciji
+const buttons = document.querySelectorAll('nav.category-nav button');
+
+// Dodaj event listener na svako dugme
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const kategorija = button.getAttribute('data-category');
+    prikaziKategoriju(kategorija);
+
+    // Opcionalno: istakni trenutno kliknuto dugme (dodavanje klase active)
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+// Na početku, dodaj da prvo dugme bude aktivno (ako želiš)
+window.addEventListener("DOMContentLoaded", () => {
+  prikaziKategoriju("dorucak");
+  buttons.forEach(btn => btn.classList.remove('active'));
+  buttons[0].classList.add('active');
+});
