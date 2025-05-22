@@ -504,24 +504,33 @@ const menuData = {
 // Funkcija za prikaz jela iz određene kategorije
 function prikaziKategoriju(kategorija) {
   const menuSection = document.getElementById("menu-section");
-  menuSection.innerHTML = ""; // Očisti prethodni sadržaj
+  menuSection.innerHTML = "";
 
-  if (!menuData[kategorija]) {
-    menuSection.innerHTML = "<p>Nema jela za odabranu kategoriju.</p>";
+  const jela = menuData[kategorija] || [];
+
+  if (jela.length === 0) {
+    menuSection.innerHTML = "<p>Nema jela za ovu kategoriju.</p>";
     return;
   }
 
-  menuData[kategorija].forEach(jelo => {
-    const jeloDiv = document.createElement("div");
-    jeloDiv.className = "jelo";
+  jela.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("menu-card");
 
-    jeloDiv.innerHTML = `
-      <img src="${jelo.image}" alt="${jelo.name}" class="jelo-slika" />
-      <h3>${jelo.name}</h3>
-      <p>${jelo.description}</p>
-      <p class="cijena">${jelo.price}</p>
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div class="menu-card-content">
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <span>${item.price}</span>
+      </div>
     `;
 
-    menuSection.appendChild(jeloDiv);
+    menuSection.appendChild(card);
   });
 }
+
+// Po defaultu prikaži "dorucak" kad se stranica učita
+window.addEventListener("DOMContentLoaded", () => {
+  prikaziKategoriju("dorucak");
+});
