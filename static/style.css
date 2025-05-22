@@ -1,6 +1,6 @@
 body {
   background-image: url("images/pozadina.png");
-  background-size: 110% auto;
+  background-size: 110% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
