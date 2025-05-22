@@ -8,7 +8,14 @@
 <body>
 
   <header>
-    <h2>RESTORAN AUTHOR</h2>
+   
+    <div class="menu-button-container">
+    <a href="{{ url_for('meni') }}" class="menu-square">
+      <img src="{{ url_for('static', filename='images/author.png') }}" alt="Logo" class="menu-logo">
+    </a>
+   
+  </div>
+
   </header>
 
   <section class="hero">
@@ -16,32 +23,26 @@
     <p>Mjesto gdje ukus i ambijent čine razliku</p>
   </section>
 
-  <div class="menu-button-container">
-    <a href="{{ url_for('meni') }}" class="menu-square">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="menu-logo">
-    </a>
-    <div class="menu-label">Meni</div>
-  </div>
-
+  
   <section class="team">
     <h3 class="team-heading">Naš tim</h3>
     <div class="team-grid">
-      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+      <a href="https://www.linkedin.com/in/ajna-karić-021237286/" target="_blank" class="team-member">
         <img src="{{ url_for('static', filename='images/clan1.jpg') }}" alt="Član 1">
         <div class="name">Ajna Karić</div>
         <div class="role">Studentica Sofverskog inženjerstva</div>
       </a>
-      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+      <a href="https://www.linkedin.com/in/tajra-tašić-a85107357/" target="_blank" class="team-member">
         <img src="{{ url_for('static', filename='images/clan2.jpeg') }}" alt="Član 2">
         <div class="name">Tajra Tašić</div>
         <div class="role">Studentica Sofverskog inženjerstva</div>
       </a>
-      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+      <a href="https://www.linkedin.com/in/aida-begagić-383168364/" target="_blank" class="team-member">
         <img src="{{ url_for('static', filename='images/clan3.jpg') }}" alt="Član 3">
         <div class="name">Aida Begagić</div>
         <div class="role">Studentica Sofverskog inženjerstva</div>
       </a>
-      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+      <a href="https://www.linkedin.com/in/lamija-mehic/" target="_blank" class="team-member">
         <img src="{{ url_for('static', filename='images/clan.png') }}" alt="Član 4">
         <div class="name">Lamija Mehić</div>
         <div class="role">Studentica Sofverskog inženjerstva</div>
