@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-    <meta charset="UTF-8">
-    <title>Restoran Meni</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>Restoran Meni</title>
+  <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-     <header>
+  <header>
     <h1>Cafe Restoran Author – Zenica</h1>
     <p>Uživajte u našim specijalitetima</p>
   </header>
@@ -29,7 +29,38 @@
   </nav>
 
   <section id="menu-section">
-    <!-- Kartice jela će se ovdje prikazivati -->
+    <!-- Sve kartice jela -->
+    <div class="menu-card" data-category="dorucak">
+      <img src="images/omlet.jpg" alt="Omlet sa sirom">
+      <h3>Omlet sa sirom</h3>
+      <p>5.00 KM</p>
+    </div>
+
+    <div class="menu-card" data-category="dorucak">
+      <img src="images/sendvic.jpg" alt="Sendvič s jajima">
+      <h3>Sendvič s jajima</h3>
+      <p>4.50 KM</p>
+    </div>
+
+    <div class="menu-card" data-category="salate">
+      <img src="images/cezar.jpg" alt="Cezar salata">
+      <h3>Cezar salata</h3>
+      <p>6.50 KM</p>
+    </div>
+
+    <div class="menu-card" data-category="pasta">
+      <img src="images/carbonara.jpg" alt="Pasta Carbonara">
+      <h3>Pasta Carbonara</h3>
+      <p>8.50 KM</p>
+    </div>
+
+    <div class="menu-card" data-category="corbe">
+      <img src="images/bosanska-corba.jpg" alt="Bosanska čorba">
+      <h3>Bosanska čorba</h3>
+      <p>4.00 KM</p>
+    </div>
+
+    <!-- Dodaj ostala jela ovim stilom -->
   </section>
 
   <footer>
@@ -37,6 +68,6 @@
     <p>© 2025 Cafe Restoran Author</p>
   </footer>
 
-  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script src="static/app.js"></script>
 </body>
 </html>

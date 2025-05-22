@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="bs">
 <head>
-    <title>Početna stranica</title>
+  <meta charset="UTF-8">
+  <title>Dobrodošli - Author</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Dobrodošli na projekat OSiRuO 2025!</h1>
-    <p><a href="/meni">Idi na meni</a></p>
+
+  <header>
+    <h2>RESTORAN AUTHOR</h2>
+  </header>
+
+  <section class="hero">
+    <h2>Dobrodošli na naš projekat iz OSiRuO</h2>
+    <p>Mjesto gdje ukus i ambijent čine razliku</p>
+  </section>
+
+  <div class="menu-button-container">
+    <a href="{{ url_for('meni') }}" class="menu-square">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="menu-logo">
+    </a>
+    <div class="menu-label">Meni</div>
+  </div>
+
+  <section class="team">
+    <h3 class="team-heading">Naš tim</h3>
+    <div class="team-grid">
+      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+        <img src="{{ url_for('static', filename='images/clan.jpg') }}" alt="Član 1">
+        <div class="name">Član 1</div>
+        <div class="role">Lorem ipsum dolor sit amet.</div>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+        <img src="{{ url_for('static', filename='images/clan.jpg') }}" alt="Član 2">
+        <div class="name">Član 2</div>
+        <div class="role">Lorem ipsum dolor sit amet.</div>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+        <img src="{{ url_for('static', filename='images/clan.jpg') }}" alt="Član 3">
+        <div class="name">Član 3</div>
+        <div class="role">Lorem ipsum dolor sit amet.</div>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" class="team-member">
+        <img src="{{ url_for('static', filename='images/clan.jpg') }}" alt="Član 4">
+        <div class="name">Član 4</div>
+        <div class="role">Lorem ipsum dolor sit amet.</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Author | Sva prava zadržana
+  </footer>
+
 </body>
 </html>
