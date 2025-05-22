@@ -479,19 +479,19 @@ const menuData = {
       name: "Medena torta",
       description: "Slojevita poslastica s bogatim medenim korama i kremastim punjenjem",
       price: "5,00 KM",
-      image: "/static/images/74.avif"
+      image: "/static/images/75.avif"
     },
     {
       name: "Cheesecake",
       description: "Voćni desert u čaši",
       price: "5,00 KM",
-      image: "/static/images/75.avif"
+      image: "/static/images/76.avif"
     },
     {
       name: "Pistacija",
       description: "Dubai desert u čaši",
       price: "5,00 KM",
-      image: "/static/images/76.avif"
+      image: "/static/images/77.avif"
     },
   ],
 
