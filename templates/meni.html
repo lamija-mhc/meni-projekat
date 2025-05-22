@@ -31,17 +31,9 @@
   </nav>
 
   <section id="menu-section">
-  <div class="menu-box">
-    <div class="menu-item">
-      <img src="putanja-do-slike.jpg" alt="Naziv jela">
-      <div class="menu-item-content">
-        <div class="menu-item-name">Naziv jela</div>
-        <div class="menu-item-description">Opis jela</div>
-        <div class="menu-item-price">Cijena</div>
-      </div>
-    </div>
-  </div>
+  <!-- Kartice jela će se ovdje automatski prikazati -->
 </section>
+
 
 
   <footer>
@@ -52,3 +44,44 @@
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+
+<script>
+  const menuItems = [
+    {
+      name: "Pizza Margherita",
+      description: "Klasična pizza s paradajzom, mozzarellom i bosiljkom.",
+      price: "10 KM",
+      image: "https://via.placeholder.com/300x180?text=Pizza"
+    },
+    {
+      name: "Ćevapi",
+      description: "Tradicionalno jelo sa lukom i somunom.",
+      price: "8 KM",
+      image: "https://via.placeholder.com/300x180?text=Ćevapi"
+    },
+    {
+      name: "Pasta Carbonara",
+      description: "Italijanska pasta sa slaninom i sirom.",
+      price: "12 KM",
+      image: "https://via.placeholder.com/300x180?text=Pasta"
+    }
+  ];
+
+  const menuSection = document.getElementById("menu-section");
+
+  menuItems.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("menu-card");
+
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div class="menu-card-content">
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <span>${item.price}</span>
+      </div>
+    `;
+
+    menuSection.appendChild(card);
+  });
+</script>

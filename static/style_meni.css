@@ -42,8 +42,8 @@ header p {
 
 .category-nav button {
   background-color: #000;
-  border: 2px solid #ff6600;
-  color: #ff6600;
+  border: 2px solid #f69c21;
+  color: #f69c21;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -52,29 +52,19 @@ header p {
 }
 
 .category-nav button:hover {
-  background-color: #ff6600;
+  background-color: #f69c21;
   color: white;
 }
 
 /* SEKCIJA MENIJA */
 #menu-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-#menu-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 20px;
 }
 
-.menu-box {
+.menu-card {
   background-color: #fff;
   border: 2px solid #ff6600;
   border-radius: 12px;
@@ -82,48 +72,37 @@ header p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.menu-box:hover {
+.menu-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(255, 102, 0, 0.2);
 }
 
-.menu-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.menu-item img {
+.menu-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
 }
 
-.menu-item-content {
+.menu-card-content {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
-.menu-item-name {
+.menu-card-content h3 {
   font-size: 1.2rem;
-  font-weight: bold;
+  margin: 0 0 8px;
   color: #333;
-  margin-bottom: 8px;
 }
 
-.menu-item-description {
-  flex-grow: 1;
+.menu-card-content p {
   font-size: 0.95rem;
   color: #666;
   margin-bottom: 12px;
 }
 
-.menu-item-price {
+.menu-card-content span {
   font-size: 1.1rem;
   font-weight: bold;
   color: #ff6600;
-  text-align: right;
+  float: right;
 }
