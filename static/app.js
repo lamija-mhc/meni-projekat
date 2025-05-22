@@ -511,34 +511,17 @@ function prikaziKategoriju(kategorija) {
     return;
   }
 
-  const cardsContainer = document.createElement("div");
-  cardsContainer.classList.add("cards-container");
+  menuData[kategorija].forEach(jelo => {
+    const jeloDiv = document.createElement("div");
+    jeloDiv.className = "jelo";
 
-  menuData[kategorija].forEach(item => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <span class="price">${item.price}</span>
+    jeloDiv.innerHTML = `
+      <img src="${jelo.image}" alt="${jelo.name}" class="jelo-slika" />
+      <h3>${jelo.name}</h3>
+      <p>${jelo.description}</p>
+      <p class="cijena">${jelo.price}</p>
     `;
-    cardsContainer.appendChild(card);
-  });
 
-  menuSection.appendChild(cardsContainer);
+    menuSection.appendChild(jeloDiv);
+  });
 }
-
-// Postavi event listenere na dugmad nakon učitavanja stranice
-window.onload = function () {
-  const buttons = document.querySelectorAll(".category-nav button");
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const kategorija = button.getAttribute("data-category");
-      prikaziKategoriju(kategorija);
-    });
-  });
-
-  // Prikaži početnu kategoriju (npr. dorucak)
-  prikaziKategoriju("dorucak");
-};
