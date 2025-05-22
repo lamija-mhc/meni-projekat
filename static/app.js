@@ -29,14 +29,13 @@ const menuData = {
     }
 
   ],
-  // Dodaj i ostale kategorije kao u prethodnom kodu
-  // ...
+  
 };
 
-// Funkcija za prikaz jela iz određene kategorije
+
 function prikaziKategoriju(kategorija) {
   const menuSection = document.getElementById("menu-section");
-  menuSection.innerHTML = ""; // Očisti prethodni sadržaj
+  menuSection.innerHTML = ""; 
 
   if (!menuData[kategorija]) {
     menuSection.innerHTML = "<p>Nema jela za odabranu kategoriju.</p>";
@@ -61,7 +60,7 @@ function prikaziKategoriju(kategorija) {
   menuSection.appendChild(cardsContainer);
 }
 
-// Postavi event listenere na dugmad nakon učitavanja stranice
+
 window.onload = function () {
   const buttons = document.querySelectorAll(".category-nav button");
   buttons.forEach(button => {
@@ -71,6 +70,6 @@ window.onload = function () {
     });
   });
 
-  // Prikaži početnu kategoriju (npr. dorucak)
+  
   prikaziKategoriju("dorucak");
 };
