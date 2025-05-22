@@ -65,64 +65,65 @@ header p {
   gap: 20px;
 }
 
-/* KARTICA JELA */
+#menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .menu-box {
-  background-color: rgb(0, 0, 0);
-  border: 1.5px solid #ff6600;
+  background-color: #fff;
+  border: 2px solid #ff6600;
   border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.2);
 }
 
-/* UNUTAR KARTICE */
-.menu-item img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.menu-item-content {
-  padding: 12px;
+.menu-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .menu-item-name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #222;
-  margin-bottom: 5px;
+  color: #333;
+  margin-bottom: 8px;
 }
 
 .menu-item-description {
-  font-size: 0.9rem;
-  color: #666;
   flex-grow: 1;
-  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
 }
 
 .menu-item-price {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #ff6600;
   text-align: right;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
 }
