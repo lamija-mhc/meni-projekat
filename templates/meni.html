@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meni Restorana</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style_meni.css') }}" />
+    <meta charset="UTF-8">
+    <title>Restoran Meni</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Meni Restorana</h1>
+     <header>
+    <h1>Cafe Restoran Author – Zenica</h1>
+    <p>Uživajte u našim specijalitetima</p>
+  </header>
 
-  <section class="menu-category">
-    <h2 class="category-title">Dorucak</h2>
+  <nav class="category-nav">
+    <button data-category="dorucak">Doručak</button>
+    <button data-category="prilog">Prilog</button>
+    <button data-category="salate">Salate</button>
+    <button data-category="piletina">Piletina</button>
+    <button data-category="teletina">Teletina</button>
+    <button data-category="junetina">Junetina</button>
+    <button data-category="pasta">Pasta</button>
+    <button data-category="corbe">Čorbe</button>
+    <button data-category="wok">Wok-Rižoto</button>
+    <button data-category="burgeri">Burgeri</button>
+    <button data-category="hladneplate">Hladne plate</button>
+    <button data-category="burgermenu">Burger meni</button>
+    <button data-category="palacinke">Palačinci</button>
+    <button data-category="pizza">Pizza</button>
+    <button data-category="kolaci">Kolači</button>
+  </nav>
 
-    <div class="menu-items">
-      <div class="menu-box">
-        <article class="menu-item">
-          <img src="{{ url_for('static', filename='images/palačinke.jpg') }}" alt="Palačinke" />
-          <div class="menu-item-content">
-            <h3 class="menu-item-name">Palačinke</h3>
-            <p class="menu-item-description">Palačinke sa eurokremom i čokoladom</p>
-            <div class="menu-item-price">5 KM</div>
-          </div>
-        </article>
-      </div>
-
-      <div class="menu-box">
-        <article class="menu-item">
-          <img src="{{ url_for('static', filename='images/džem.jpg') }}" alt="Pekmez i puter" />
-          <div class="menu-item-content">
-            <h3 class="menu-item-name">Pekmez i puter</h3>
-            <p class="menu-item-description">Tost sa pekmezom i puterom</p>
-            <div class="menu-item-price">3 KM</div>
-          </div>
-        </article>
-      </div>
-
-      <div class="menu-box">
-        <article class="menu-item">
-          <img src="{{ url_for('static', filename='images/burek.jpg') }}" alt="Burek" />
-          <div class="menu-item-content">
-            <h3 class="menu-item-name">Burek</h3>
-            <p class="menu-item-description">Burek sa sirom</p>
-            <div class="menu-item-price">4 KM</div>
-          </div>
-        </article>
-      </div>
-    </div>
+  <section id="menu-section">
+    <!-- Kartice jela će se ovdje prikazivati -->
   </section>
+
+  <footer>
+    <p>📍 Sarajevska bb, Zenica | ☎ +387 32 408-000 | 🕒 07:00–23:00</p>
+    <p>© 2025 Cafe Restoran Author</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
