@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-  <meta charset="UTF-8">
-  <title>Restoran Meni</title>
-  <link rel="stylesheet" href="static/style.css">
+    <meta charset="UTF-8">
+    <title>Restoran Meni</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <header>
+     <header>
     <h1>Cafe Restoran Author – Zenica</h1>
     <p>Uživajte u našim specijalitetima</p>
   </header>
@@ -29,6 +29,7 @@
   </nav>
 
   <section id="menu-section">
+<<<<<<< HEAD
 <<<<<<< HEAD
    
 =======
@@ -65,6 +66,9 @@
 
     <!-- Dodaj ostala jela ovim stilom -->
 >>>>>>> f3e0450bda5070790abc9cadec81d70ace13d68e
+=======
+    <!-- Kartice jela će se ovdje prikazivati -->
+>>>>>>> e38eea48db8be97eec9f20222e6e6daa5e45b8c1
   </section>
 
   <footer>
@@ -72,6 +76,6 @@
     <p>© 2025 Cafe Restoran Author</p>
   </footer>
 
-  <script src="static/app.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
