@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Restoran Meni</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style_meni.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
      <header>
@@ -13,6 +13,7 @@
 
   <nav class="category-nav">
     <button data-category="dorucak">Doručak</button>
+    <button data-category="prilog">Prilog</button>
     <button data-category="salate">Salate</button>
     <button data-category="piletina">Piletina</button>
     <button data-category="teletina">Teletina</button>
@@ -21,14 +22,15 @@
     <button data-category="corbe">Čorbe</button>
     <button data-category="wok">Wok-Rižoto</button>
     <button data-category="burgeri">Burgeri</button>
-    <button data-category="hladne-plate">Hladne plate</button>
-    <button data-category="burger-menu">Burger meni</button>
+    <button data-category="hladneplate">Hladne plate</button>
+    <button data-category="burgermenu">Burger meni</button>
     <button data-category="palacinke">Palačinci</button>
     <button data-category="pizza">Pizza</button>
-    <button data-category="kolaci">Kolacicci</button>
+    <button data-category="kolaci">Kolači</button>
   </nav>
 
   <section id="menu-section">
+    <!-- Kartice jela će se ovdje prikazivati -->
   </section>
 
   <footer>
