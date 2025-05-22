@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const menuData = {
   dorucak: [
     {
@@ -63,13 +64,31 @@ function prikaziKategoriju(kategorija) {
 
 window.onload = function () {
   const buttons = document.querySelectorAll(".category-nav button");
+=======
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.category-nav button');
+  const cards = document.querySelectorAll('.menu-card');
+
+>>>>>>> f3e0450bda5070790abc9cadec81d70ace13d68e
   buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const kategorija = button.getAttribute("data-category");
-      prikaziKategoriju(kategorija);
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+      
+      cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (cardCategory === category || category === 'sve') {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
   });
+<<<<<<< HEAD
 
   
   prikaziKategoriju("dorucak");
 };
+=======
+});
+>>>>>>> f3e0450bda5070790abc9cadec81d70ace13d68e
